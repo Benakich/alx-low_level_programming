@@ -1,20 +1,20 @@
 #include <stdio.h>
+#include "main.h"
 /**
- * main - entry point
- * Description - fn to print _putchar
- * Return - 0 always
+ * main - Entry point
+ * Description - fn to print -putchar
+ * return - 0 always
  */
-int main (void)
+int main(void)
 {
 	char i[] = "_putchar";
-	int p = 0;
-
+        int p = 0;
+	
 	while (i[p] != '\0')
-	{	
+	{
 		putchar(i[p]);
-		p++;
+		p++;	
 	}
-
 	putchar('\n');
 	return (0);
 }
