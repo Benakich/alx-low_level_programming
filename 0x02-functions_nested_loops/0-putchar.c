@@ -3,17 +3,17 @@
 /**
  * main - Entry point
  * Description - fn to print -putchar
- * return - 0 always
+ * Return: 0 always (Success)
  */
 int main(void)
 {
 	char i[] = "_putchar";
-        int p = 0;
-	
+	int p = 0;
+
 	while (i[p] != '\0')
 	{
 		putchar(i[p]);
-		p++;	
+		p++;
 	}
 	putchar('\n');
 	return (0);
