@@ -4,12 +4,11 @@
  */
 void jack_bauer(void)
 {
-	int m = 60;
-	int h = 24;
+	int h,m;
 
-	for (; h < 24;)
+	for (h = 0; h < 24;)
 	{
-		for (; m < 60;)
+		for (m = 0; m < 60;)
 		{
 			_putchar((h / 10) + '0');
 			_putchar((h % 10) + '0');
