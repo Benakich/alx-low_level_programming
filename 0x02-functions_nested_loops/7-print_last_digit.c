@@ -1,26 +1,23 @@
 #include "main.h"
 /**
- * print_last_digit - print last digit of a number
- *
- * @d: number to be tested
- *
- * Return: last digit of the number
+ * print_last_digit - print the last digit of a number
+ * @n: int type number
+ * Return: return value of last digit
  */
-int print_last_digit(int d)
+int print_last_digit(int n)
 {
-	int j;
+	int i;
 
-	if (d < 0)
+	if (n < 0)
 	{
-		d = -1 * d;
-		j = d % 10;
-		_putchar(j + '0');
-		return (j);
+		i = -1 * (n % 10);
+		_putchar(i + '0');
+		return (i);
 	}
 	else
 	{
-		j = d % 10;
-		_putchar(j + '0');
-		return (j);
+		i = n % 10;
+		_putchar(i + '0');
+		return (i);
 	}
 }
