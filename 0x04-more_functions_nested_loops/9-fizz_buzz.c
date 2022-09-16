@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * fizz_buzz - print numbers 1-100, print fizz for multiples of 3 and Buzz for
  * multiples of 5.
@@ -20,6 +20,6 @@ void fizz_buzz(void)
 			printf("FizzBuzz ");
 		else
 			printf("%d ", i);
-
 	}
+	putchar('\n');
 }
