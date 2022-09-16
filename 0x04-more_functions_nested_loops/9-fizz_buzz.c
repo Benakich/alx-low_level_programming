@@ -8,7 +8,6 @@
 void fizz_buzz(void)
 {
 	int i;
-	int j;
 
 	for (i = 0; i <= 100; i++)
 	{
