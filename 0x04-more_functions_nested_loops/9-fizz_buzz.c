@@ -4,8 +4,10 @@
  * fizz_buzz - print numbers 1-100, print fizz for multiples of 3 and Buzz for
  * multiples of 5.
  * print fizzBuzz for multiples of 3 and 5
+ *
+ * Return: 0 Always
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -22,4 +24,5 @@ void fizz_buzz(void)
 			printf("%d ", i);
 	}
 	putchar('\n');
+	return (0);
 }
