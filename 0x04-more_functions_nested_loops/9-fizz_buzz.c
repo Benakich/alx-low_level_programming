@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- * fizz_buzz - print numbers 1-100, print fizz for multiples of 3 and Buzz for
+ * main - print numbers 1-100, print fizz for multiples of 3 and Buzz for
  * multiples of 5.
  * print fizzBuzz for multiples of 3 and 5
  *
