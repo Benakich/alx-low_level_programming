@@ -1,4 +1,4 @@
-/** 
+/**
  * swap_int - fn to swap two integers
  *
  * @a: pointer for swapping
@@ -6,6 +6,9 @@
  */
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b =98;
+
+	int c = *a;
+
+	*a = *b;
+	*b = c;
 }
