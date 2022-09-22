@@ -11,18 +11,16 @@
 int check_separator(char c)
 {
 	int i = 0;
-	int j;
+
 	char separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '}', '{'};
 
 	for (; i < 13; i++)
 	{
 		if (c == separators[i])
-			j = 1;
-		else
-			j = 0;
+			return (1);
 	}
-	return (j);
 
+	return (0);
 }
 
 /**
