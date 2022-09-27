@@ -2,7 +2,7 @@
 
 
 /**
-* print_chessbaordd - fn to print chessboard
+* print_chessboard - fn to print chessboard
 * @a: pointer array type char
 *
 * Return: void
