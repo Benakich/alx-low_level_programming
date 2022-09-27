@@ -3,7 +3,7 @@
 *
 * @haystack: string pointer type char
 * @needle: string pointer type char
-
+*
 * Return: char
 */
 
