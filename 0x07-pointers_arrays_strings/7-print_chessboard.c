@@ -1,3 +1,6 @@
+#include "main.h"
+
+
 /**
 * print_chessbaordd - fn to print chessboard
 * @a: pointer array type char
