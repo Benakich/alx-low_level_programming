@@ -10,12 +10,12 @@ int _find_sqrt(int n, int i);
 */
 
 int _find_sqrt(int n, int i)
-{	
+{
 	if (i * i == n)
 		return (i);
-	else if ( i < 0)
+	else if (i < 0)
 		return (-1);
-	return (_find_sqrt(n, (i - 1)));;
+	return (_find_sqrt(n, (i - 1)));
 }
 
 
@@ -29,13 +29,16 @@ int _find_sqrt(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-	unsigned int i;
+	int i;
 
 	if (n < 0)
 		return (-1);
 	if (n == 1)
 		return (n);
-	i = n / 2;
+	if (n > 1000000)
+		i = n / 2000;
+	else
+		i = n / 2;
 
 	return (_find_sqrt(n, i));
 }

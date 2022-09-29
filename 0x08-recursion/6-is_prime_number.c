@@ -11,14 +11,10 @@ int is_prime_number(int n);
 
 int find_prime(int n, int i)
 {
-	while (i > 1)
-	{
-		if (n % i == 0)
-			return (0);
-		else
-			return (find_prime(n, (i - 1)));
-
-	}
+	if (i > 1 && n % i == 0)
+		return (0);
+	if (i > 1)
+		return (find_prime(n, (i - 1)));
 	return (1);
 }
 
