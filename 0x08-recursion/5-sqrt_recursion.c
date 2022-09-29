@@ -1,5 +1,5 @@
 int _sqrt_recursion(int n);
-int _find_sqrt(int n, unsigned int i);
+int _find_sqrt(int n, int i);
 
 /**
 * _find_sqrt - fn to find square root
@@ -9,7 +9,7 @@ int _find_sqrt(int n, unsigned int i);
 * Return: i if sqrt found, otherwise -1
 */
 
-int _find_sqrt(int n, unsigned int i)
+int _find_sqrt(int n, int i)
 {
 	while (i > 0)
 	{
