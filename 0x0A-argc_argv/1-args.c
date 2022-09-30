@@ -11,6 +11,6 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("The number of arguement passed is: %d\n", argc);
+	printf("%d\n", argc);
 	return (0);
 }
