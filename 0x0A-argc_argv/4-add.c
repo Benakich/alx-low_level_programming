@@ -16,6 +16,11 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
+		if (argc == 1)
+		{
+			printf("0");
+			return (0);
+		}
 		if (atoi(argv[i]))
 		{
 			sum += (atoi(argv[i]));
