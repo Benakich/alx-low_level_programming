@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <ctype.h>
 /**
 * main - entry point
 * @argc: count of arguments
@@ -13,22 +13,24 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
+	int num;
+	char *p;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 1)
 	{
-		if (argc == 1)
+		for (i = 1; i < argc; i++)
 		{
-			printf("0\n");
-			return (0);
-		}
-		if (atoi(argv[i]))
-		{
-			sum += (atoi(argv[i]));
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
+			num = strtol(argv[i], &p, 10);
+
+			if (!*p)
+			{
+				sum += num;
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
 	printf("%d\n", sum);
