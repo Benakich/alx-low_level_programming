@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _isalpha - entry
-* @c: char
+* _isalpha - fn to check if alpha
+* @c: type int
 * Return: int
 */
 
