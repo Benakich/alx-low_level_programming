@@ -45,9 +45,10 @@ char *str_concat(char *s1, char *s2)
 		A[counter] = s2[n];
 	}
 	A[counter + 1] = s2[n + 1];
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (A);
-	}
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		S2 = "";
 	return (A);
 }
