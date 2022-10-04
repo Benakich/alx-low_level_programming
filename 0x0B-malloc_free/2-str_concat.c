@@ -19,6 +19,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int totlen;
 	char *A;
 
+	if (s1 == NULL)
+		s2 = "";
+	if (s2 == NULL)
+		s2 = "";
 	i = 0;
 	while (s1[i] != '\0')
 	{
@@ -32,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 
 	totlen = i + n;
 
-	A = malloc((totlen + 1) * sizeof(char));
+	A = malloc((totlen) * sizeof(char));
 
 	if (A == NULL)
 		return (NULL);
@@ -44,11 +48,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		A[counter] = s2[n];
 	}
-	A[counter + 1] = s2[n + 1];
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		S2 = "";
+
 	return (A);
 }
