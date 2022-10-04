@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 
 	totlen = i + n;
 
-	A = malloc(totlen * sizeof(char));
+	A = malloc((totlen + 1) * sizeof(char));
 
 	if (A == NULL)
 		return (NULL);
@@ -44,6 +44,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		A[counter] = s2[n];
 	}
+	A[counter + 1] = s2[n + 1];
 	if (s1 == NULL && s2 == NULL)
 	{
 		return (A);
