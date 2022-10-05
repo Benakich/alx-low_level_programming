@@ -15,6 +15,7 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int i;
 	unsigned int n;
+	unsigned int m;
 	unsigned int counter;
 	unsigned int totlen;
 	char *A;
@@ -40,13 +41,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (A == NULL)
 		return (NULL);
-	for (i = 0; s1[i] != '\0'; i++)
+	for (counter = 0, m = 0; counter < (totlen + 1); counter++)
 	{
-		A[i] = s1[i];
-	}
-	for (counter = i, n = 0; counter < totlen; counter++, n++)
-	{
-		A[counter] = s2[n];
+		if (counter < i)
+			A[counter] = s1[counter];
+		else
+			A[counter] = s2[m++];
 	}
 	A[counter] = '\0';
 
