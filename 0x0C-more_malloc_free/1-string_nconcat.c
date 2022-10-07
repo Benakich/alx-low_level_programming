@@ -36,12 +36,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	j = 0;
 
 	for (i = 0; s1[i]; i++)
-		concat[j++] = s1[i];
+		c[j++] = s1[i];
 
 	for (i = 0; s2[i] && i < n; i++)
-		concat[j++] = s2[i];
+		c[j++] = s2[i];
 
-	concat[j] = '\0';
+	c[j] = '\0';
 
 	return (c);
 }
