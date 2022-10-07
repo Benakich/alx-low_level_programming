@@ -2,25 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * _strlen - fn to get length of string
- * @s: string pointer to be counted
- *
- * Return: int
- */
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
-
-}
 
 /**
  * string_nconcat - fn that concatenates 2 strings
@@ -34,29 +15,33 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int i, j, k;
+	char *c;
+	unsigned int m = n, i;
+	unsigned int j;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
 
-	i = (unsigned int)_strlen(s1);
+	for (i = 0; s1[i]; i++)
+		m++;
 
-	p = malloc((i + n + 1)  * sizeof(s1));
-	if (p == NULL)
+	c = malloc((m + 1) * sizeof(s1));
+
+	if (c == NULL)
 		return (NULL);
 
-	for (j = 0, k = 0; j < (i + n); j++)
-	{
-		if (j < i)
-			p[j] = s1[j];
-		else
-			p[j] = s2[k++];
-	}
-	p[j] = '\0';
+	j = 0;
 
-	return (p);
+	for (i = 0; s1[i]; i++)
+		concat[j++] = s1[i];
 
+	for (i = 0; s2[i] && i < n; i++)
+		concat[j++] = s2[i];
+
+	concat[j] = '\0';
+
+	return (c);
 }
