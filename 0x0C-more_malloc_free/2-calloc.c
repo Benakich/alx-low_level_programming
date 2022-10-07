@@ -10,19 +10,24 @@
  *
  * Return: void pointer to memory allocation
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void **p;
+	void *mem_alloc;
+	char *holder;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(nmemb * size);
-	if (p == NULL)
+
+	mem_alloc = malloc(size * nmemb);
+
+	if (mem_alloc == NULL)
 		return (NULL);
-	return (p);
 
+	holder = mem_alloc;
 
+	for (i = 0; i < (size * nmemb); i++)
+		holder[i] = '\0';
 
-
+	return (mem_alloc);
 }
