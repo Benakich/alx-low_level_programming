@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	i = _strlen(s1);
+	i = (unsigned int)_strlen(s1);
 
 	p = malloc((i + n + 1)  * sizeof(s1));
 	if (p == NULL)
