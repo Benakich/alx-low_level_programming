@@ -34,11 +34,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dogptr);
 		return (NULL);
 	}
-	o = malloc(sizeof(*owner) * i + 1);
+	o = malloc(sizeof(*owner) * j + 1);
 	if (o == NULL)
 	{
-		free(dogptr);
 		free(n);
+		free(dogptr);
 		return (NULL);
 	}
 
