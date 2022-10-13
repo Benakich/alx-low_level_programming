@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_numbers - fn that returns the sum of all its parameters
+ * print_strings - fn that prints strings given as argument
  * @separator: char str to separate numbers
  * @n: number of arguments
  * @...: variable number of argumenets
@@ -19,8 +19,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		hold = va_arg(c, char *);
+
 		if (hold == NULL)
-				printf("(nil");
+			printf("(nil");
 		else
 			printf("%s", hold);
 		if (i != (n - 1) && separator != NULL)
