@@ -5,7 +5,7 @@
 /**
  * print_numbers - fn that returns the sum of all its parameters
  * @separator: char str to separate numbers
- * @n: int n to be printed
+ * @n: number of arguments
  * @...: variable number of argumenets
  */
 
