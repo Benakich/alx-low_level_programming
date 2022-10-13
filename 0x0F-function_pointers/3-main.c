@@ -26,7 +26,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	num2 = atoi(argv[3]);
 	s = argv[2];
 
-	if (*s == '/' && num2 == 0)
+	if ((*s == '/' || *s == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
