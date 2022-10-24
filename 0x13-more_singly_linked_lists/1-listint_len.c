@@ -11,16 +11,15 @@
 size_t listint_len(const listint_t *h)
 {
 	const listint_t *ptr;
-	int count = 0;
+	size_t count = 0;
 
 	ptr = h;
 
-	while (ptr->next != NULL)
+	while (ptr)
 	{
 		count++;
 		ptr = ptr->next;
 	}
-	count += 1;
 
 	return (count);
 }
