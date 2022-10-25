@@ -5,7 +5,7 @@
 
 /**
  * delete_nodeint_at_index - fn that deletes a node at a given position
- * @idx: index to add node
+ * @index: index to add node
  * @head: head pointer
  * Return: 1 if succeeded, -1 if it failed
  */
