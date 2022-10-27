@@ -17,7 +17,7 @@ listint_t *find_listint_loop(listint_t *head)
 	for (ptr2 = head->next; ptr2 != NULL; ptr2 = ptr2->next)
 	{
 		if (ptr2 == ptr2->next)
-			return (end);
+			return (ptr2);
 		for (ptr = head; ptr != ptr2; ptr = ptr->next)
 			if (ptr == ptr2->next)
 				return (ptr2->next);
