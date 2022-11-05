@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * create_buffer - creates 1024 bytes buffer.
  * @file: ptr to file
